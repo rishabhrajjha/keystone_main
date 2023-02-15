@@ -1,12 +1,15 @@
 .commit-dashboard {
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   align-items: center;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: bold;
   padding: 16px;
   border: 1px solid #ddd;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   background-color: grey;
+  height: 200px;
+  width: 50%;
+  box-sizing: border-box;
 }
