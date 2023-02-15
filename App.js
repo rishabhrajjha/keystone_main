@@ -1,5 +1,6 @@
 import React from 'react';
 import CommitDashboard from './CommitDashboard';
+import CommitDashboardTotal from './CommitDashboardTotal';
 import './CommitDashboard.css';
 
 const App = () => {
@@ -13,6 +14,9 @@ const App = () => {
       <CommitDashboard owner="rishabhrajjha" repo="keystonesecond" />
     </div>
 	
+	<div className="commit-dashboard">
+      <CommitDashboardTotal owner="rishabhrajjha" />
+    </div>
   </>
   );
 };
