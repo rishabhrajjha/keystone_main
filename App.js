@@ -15,6 +15,10 @@ const App = () => {
     </div>
 	
 	<div className="commit-dashboard">
+      <CommitDashboard owner="rishabhrajjha" repo="keystone_main" />
+    </div>
+	
+	<div className="commit-dashboard">
       <CommitDashboardTotal owner="rishabhrajjha" />
     </div>
   </>
