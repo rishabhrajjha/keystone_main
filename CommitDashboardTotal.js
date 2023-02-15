@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { fetchCommits } from './GithubApi';
+import { fetchCommitsTotal } from './GithubApiTotal';
 
-const CommitDashboard = ({ owner }) => {
+const CommitDashboardTotal = ({ owner }) => {
   const [commitCount, setCommitCount] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(async () => {
-      const count = await fetchCommits(owner);
+      const count = await fetchCommitsTotal(owner);
       setCommitCount(count);
     }, 2000);
 
@@ -15,11 +15,11 @@ const CommitDashboard = ({ owner }) => {
 
   return (
     <div>
-      <h1>Commits in {owner}</h1>
+      <h1>Total Commits by {owner}</h1>
       <h2>{commitCount}</h2>
     </div>
   );
 };
 
-export default CommitDashboard;
+export default CommitDashboardTotal;
 
